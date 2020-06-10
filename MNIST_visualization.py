@@ -44,7 +44,7 @@ test_labels = to_categorical(test_labels_dec)
 
 # Create simple model with callback for tensorboard.
 # The model is only for visualization purpose, so we don't use validation data.
-tb_logdir = 'C:\\Users\\S3823370\\Documents\\GitHub\\MNIST_visualization\\Tensorboard'
+tb_logdir = <'add_path'>
 input_tensor = Input(shape=(train_images.shape[1], train_images.shape[2],))
 l1 = layers.Flatten()(input_tensor)
 l2 = layers.Dense(512, activation='relu')(l1)
